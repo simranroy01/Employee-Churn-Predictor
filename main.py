@@ -78,7 +78,7 @@ department_churn = dataset.groupby('salary')['left'].value_counts().unstack().fi
 department_churn.plot(kind='bar', stacked=True)
 plt.xlabel("Salary")
 plt.ylabel("Count")
-plt.title("Employee Churn by Department")
+plt.title("Employee Churn by Salary")
 st.pyplot()
 
 st.text("")
